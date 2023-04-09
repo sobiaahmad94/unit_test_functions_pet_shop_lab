@@ -158,6 +158,13 @@ def get_customer_pet_count(customer):
     return total_pets
 
 # 16. Add pet to customer
+# customers dict --> ["pets"] key
+# create add_pet_to_customer function
+# pass in customer and new_pet
+# create customer_new_pet var 
+# grab ["pets"] key (empty [])
+# then insert(0, "Pikachu") to insert new_pet
+# return customer_new_pet
 def add_pet_to_customer(customer, new_pet):
     customer_new_pet = customer["pets"].insert(0, new_pet)
     return customer_new_pet
